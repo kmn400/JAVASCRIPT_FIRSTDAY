@@ -2,12 +2,13 @@
 <html>
 <body>
 <button id='btn-greet'>인사</button>
+<p id="demo"></p>
 <script>
     document.getElementById('btn-greet').addEventListener('click', function() {
     value = prompt('이름을 입력해주세요');
-    alert(value +'님 안녕하세요.');
+    let x = value + '님 안녕하세요.';
+    document.getElementById("demo").innerHTML = x;
 });
-
 </script>
 </body>
 </html>
